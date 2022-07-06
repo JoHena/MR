@@ -1,0 +1,2 @@
+Este proyecto estaba conectada a una base de datos en Phpmyadmin (servidor local), Nombre del servidor "mr" con una tabla de "usuarios"
+atributos id, username, email, password
