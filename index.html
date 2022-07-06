@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../MR/Styles/style.css">
     <script src="https://kit.fontawesome.com/4796f673c0.js" crossorigin="anonymous"></script>
     <title>Manga Rating</title>
 </head>
@@ -21,23 +21,24 @@
             
             <div class="nav-links">
                 <a href="#top">Top Comics</a>
-                <a href="">Comunidad</a>
+                <a href="/MR/admin.php">Comunidad</a>
                 <a href="">Mis Comics</a>
             </div>
             <div class="dropdown" data-dropdown>
-                <img src="/img/HEN.png" alt="Profile-picture" class = "profile-img" data-dropdown-btn>
+                <img src="../MR/img/HEN.png" alt="Profile-picture" class = "profile-img" data-dropdown-btn>
                 <div class="dropdown-menu">
                     <div class="triangle"></div>
                     <ul>
-                        <li><a id="show-login" class="profile-tab" href="#">Iniciar Seción</a></li>
+                        <li><a id="show-login" class="profile-tab" href="#">Iniciar Sesión</a></li>
                         <li><a class="profile-tab" id="show-register" href="#">Registrarse</a></li>
                     </ul>
                 </div>
                 </div>
             </ul>
         </div>
-        
     </nav>
+
+
     
 
     <section class = "top-comics">
@@ -46,27 +47,27 @@
 
         <div class = "top-table" id="top-one">
             <div class="manga-container">
-                <img src="/img/Uta_Cover.png" alt="yofukashinouta Cover">
+                <img src="../MR/img/Uta_Cover.png" alt="yofukashinouta Cover">
                 <div class="manga-title">Yofukashi no Uta</div>
             </div>
     
             <div class="manga-container" id="top-two">
-                <img src="/img/Chainsaw_Cover.jpg" alt="Chainsaw man Cover">
+                <img src="../MR/img/Chainsaw_Cover.jpg" alt="Chainsaw man Cover">
                 <div class="manga-title">Chainsaw man</div>
             </div>
 
             <div class="manga-container" id="top-three">
-                <img src="/img/jUJUTSU_Cover.jpg" alt="Jujutsu Cover">
+                <img src="../MR/img//jUJUTSU_Cover.jpg" alt="Jujutsu Cover">
                 <div class="manga-title">Jujutsu Kaisen</div>
             </div>
 
             <div class="manga-container" id="top-four">
-                <img src="/img/Doll_Cover.png" alt="sono bisque doll wa koi wo suru Cover">
+                <img src="../MR/img/Doll_Cover.png" alt="sono bisque doll wa koi wo suru Cover">
                 <div class="manga-title">Sono bisque doll</div>
             </div>
 
             <div class="manga-container" id = "top-five"> 
-                <img src="/img/Revengers_Cover.jpg" alt="Tokyo revengers">
+                <img src="../MR/img/Revengers_Cover.jpg" alt="Tokyo revengers">
                 <div class="manga-title">Tokyo Revengers</div>
             </div>
 
@@ -146,7 +147,7 @@
     </div>
 
     <section class = "about">
-        <h4 id = "about-header">¿Que somos?</h4>
+        <h4 id = "about-header">¿Qué somos?</h4>
         <div id = "funcion">
             <div class="about-us">
                 <p>
@@ -172,7 +173,7 @@
         <i class="fa-brands fa-patreon"></i>
     </div>
 
-    <div id = "copyright">© 2020 Johnathan Moreno</div>
+    <div id = "copyright">© 2020 Johnathan Moreno Gutierrez</div>
     
 </footer>
 
@@ -190,23 +191,23 @@
         </div>
         <div class="form-element" id ="remember">
             <input type = "checkbox" id="remember-me">
-            <label for="remember-me">Recuerdame</label>
+            <label for="remember-me">Recuérdame</label>
         </div>
 
         <button type="submit">Iniciar sesión</button>
 
         <div class="form-element">
-            <a href = "#">Olvide mi contraseña</a>
+            <a href = "#">Olvidé mi contraseña</a>
         </div>
     </div>
 </div>
 
 <div class="pop-up-register">
     <div class="close-btn-register">&times;</div>
-    <form class="form" id="form-reg" action="/">
-        <h1>Registration</h1>
+    <form class="form" id="form-reg" method="post">
+        <h1>Registro</h1>
         <div class="form-element">
-            <label for="username">Username</label>
+            <label for="username">Nombre de Usuario</label>
             <input id="username" name="username" type="text">
             <div class="error"></div>
         </div>
@@ -216,18 +217,20 @@
             <div class="error"></div>
         </div>
         <div class="form-element">
-            <label for="rpassword">Password</label>
-            <input id="rpassword"name="password" type="password">
+            <label for="rpassword">Contraseña</label>
+            <input id="rpassword" name="password" type="password">
             <div class="error"></div>
         </div>
         <div class="form-element">
-            <label for="rpassword2">Password again</label>
-            <input id="rpassword2"name="password2" type="password">
+            <label for="rpassword2">Repita Contraseña</label>
+            <input id="rpassword2">
             <div class="error"></div>
         </div>
-        <button type="submit">Sign Up</button>
+        <button id ="register-btn" type="submit" name="registrar">Registrarse</button>
     </form>
+    </div>
 </div>
+
 
 </body>
 
